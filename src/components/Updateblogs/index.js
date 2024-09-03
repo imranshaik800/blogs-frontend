@@ -10,7 +10,7 @@ const Index = () => {
     const navigate = useNavigate()
   
     useEffect(()=>{
-        axios.get("https://blogs-backend-gvr2.onrender.com/updateblog/"+id)
+        axios.get("https://blogs-backend-t44p.onrender.com/updateblog/"+id)
         .then((result)=>{
             setTitle(result.data.Title)
             setTextarea(result.data.Description)
@@ -18,7 +18,7 @@ const Index = () => {
     },[id])
 
     const DeleteItems = () => {
-      axios.delete("https://blogs-backend-gvr2.onrender.com/delete/"+id)
+      axios.delete("https://blogs-backend-t44p.onrender.com/delete/"+id)
       .then((result)=>{
           navigate("/")
         
