@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+}
+
+.bg-container {
+    background-color: blue;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-card {
+    background-color: white;
+    padding: 20px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+}
+
+.input-element {
+    padding: 10px;
+    margin: 10px;
+}
