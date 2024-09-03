@@ -13,7 +13,7 @@ const Index = () => {
     const navigate = useNavigate("")
 
     useEffect(()=>{
-        axios.get("https://blogs-backend-gvr2.onrender.com/updateblog/"+id)
+        axios.get("https://blogs-backend-t44p.onrender.com/updateblog/"+id)
         .then((result)=>{
             setTitle(result.data.Title)
             setTextarea(result.data.Description)
@@ -22,7 +22,7 @@ const Index = () => {
 
     const SubmitForm = (event) => {
         event.preventDefault()
-        axios.put("https://blogs-backend-gvr2.onrender.com/"+id,({Title:Title,Description:Description}))
+        axios.put("https://blogs-backend-t44p.onrender.com/"+id,({Title:Title,Description:Description}))
         .then((result)=>{
             navigate("/")
             console.log(result)
