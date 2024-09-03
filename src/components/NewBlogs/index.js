@@ -12,7 +12,7 @@ const Index = () => {
 
     const SubmitForm = (event) => {
         event.preventDefault()
-        axios.post("https://blogs-backend-gvr2.onrender.com/newblogs",{Title:title,Description:description})
+        axios.post("https://blogs-backend-t44p.onrender.com/newblogs",{Title:title,Description:description})
         .then((result)=>{
             console.log(result)
           
