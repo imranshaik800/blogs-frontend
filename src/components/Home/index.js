@@ -7,7 +7,7 @@ import "./index.css"
 const Index = () => {
     const [blogsdata,setBlogsdata] = useState([])
     useEffect(()=>{
-        axios.get("https://blogs-backend-gvr2.onrender.com")
+        axios.get("https://blogs-backend-gvr2.onrender.cm")
         .then((result)=>{
             console.log(result)         
             setBlogsdata(result.data)
